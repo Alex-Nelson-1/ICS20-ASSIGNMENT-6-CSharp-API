@@ -1,3 +1,7 @@
+//Created Jan 2023 
+//
+//Author Alex Nelson
+
 using System;
 using System.Reflection;
 using System.Collections.Generic;
@@ -12,27 +16,27 @@ class Program
     {
         HttpClient client = new HttpClient();
         string response = await client.GetStringAsync(
-            "https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5"
+            "https://type.fit/api/quotes"
         );
         // Console.WriteLine(response);
         var jsonAsDictionary = System.Text.Json.JsonSerializer.Deserialize<Object>(response);
+
+      Random random = new Random();
+      int randNum = random.Next(1641);
         // Console.WriteLine(jsonAsDictionary);
         Console.WriteLine("");
-        JsonNode forecastNode = JsonNode.Parse(response)!;
-        Console.WriteLine(response);
-        // Important Nodes
-        JsonNode mainNode = forecastNode!["main"]!;
-        JsonNode tempNode = mainNode!["temp"]!;
-        JsonNode humidityNode = mainNode!["humidity"]!;
-        JsonNode minNode = mainNode!["temp_min"]!;
-        JsonNode maxNode = mainNode!["temp_max"]!;
+      
+        JsonNode mainNode = JsonNode.Parse(response)!;
+      
+        // Quote and Author Nodes
+        JsonNode quoteNode = mainNode[randNum]!["text"]!;
+        JsonNode authorNode = mainNode[randNum]!["author"]!;
+        
 
-        //Output of important nodes
-        Console.WriteLine("\nTemperature: " + tempNode + " K");
-        Console.WriteLine("\nHumidity: " + humidityNode + "%");
-        Console.WriteLine("\nTemp Min: " + minNode + " K");
-        Console.WriteLine("\nTemp Max: " + maxNode + " K");
-        Console.WriteLine("\nThe weather can be found on the second half of the first line");
+        //Output quote and author 
+        Console.WriteLine("Quote: " + quoteNode);
+
+         Console.WriteLine("\nAuthor: " + authorNode);
         Console.WriteLine("\n\nDone");
     }
 }

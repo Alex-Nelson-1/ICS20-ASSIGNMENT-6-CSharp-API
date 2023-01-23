@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nuVZv8/3AO6XElFpOyEYleZG2H2RnRhCJ21RvoeX4Ru5SWVh/DWJxIT5R0lVFK8tFnwT8Z+Gdsi55Oi6H2ufvw==",
+  "dgSpecHash": "CLnPDc8m64ri1lfkAskTKrMHC/114DLxf1aKpJwu0qZraIlKXu5x/chB8wUSYH7BqpfgR/ReGz/e4JzPgryKHw==",
   "success": true,
-  "projectFilePath": "/home/runner/ICS20-UNIT6-03-CSharp-API/main.csproj",
+  "projectFilePath": "/home/runner/ICS20-ASSIGNMENT-6-CSharp-API/main.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

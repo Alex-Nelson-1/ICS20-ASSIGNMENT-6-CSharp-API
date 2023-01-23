@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/runner/ICS20-UNIT6-03-CSharp-API/main.csproj",
+      "projectUniqueName": "/home/runner/ICS20-ASSIGNMENT-6-CSharp-API/main.csproj",
       "projectName": "main",
-      "projectPath": "/home/runner/ICS20-UNIT6-03-CSharp-API/main.csproj",
+      "projectPath": "/home/runner/ICS20-ASSIGNMENT-6-CSharp-API/main.csproj",
       "packagesPath": "/home/runner/.nuget/packages/",
-      "outputPath": "/home/runner/ICS20-UNIT6-03-CSharp-API/obj/",
+      "outputPath": "/home/runner/ICS20-ASSIGNMENT-6-CSharp-API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/runner/.nuget/NuGet/NuGet.Config"
