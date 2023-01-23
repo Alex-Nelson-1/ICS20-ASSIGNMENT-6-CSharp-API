@@ -23,15 +23,12 @@ class Program
 
         Random random = new Random();
         int randNum = random.Next(1641);
-        
         // Console.WriteLine(jsonAsDictionary);
         Console.WriteLine("");
         JsonNode mainNode = JsonNode.Parse(response)!;
-        
         // Quote and Author Nodes
         JsonNode quoteNode = mainNode[randNum]!["text"]!;
         JsonNode authorNode = mainNode[randNum]!["author"]!;
-        
         //Output quote and author
         Console.WriteLine("Quote: " + quoteNode);
         Console.WriteLine("\nAuthor: " + authorNode);
